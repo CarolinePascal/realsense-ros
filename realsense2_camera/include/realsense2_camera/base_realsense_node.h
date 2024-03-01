@@ -272,6 +272,9 @@ namespace realsense2_camera
         double _angular_velocity_cov;
         bool  _hold_back_imu_for_frames;
 
+        double _depth_units;
+        int _disparity_shift;
+
         std::map<stream_index_pair, rs2_intrinsics> _stream_intrinsics;
         std::map<stream_index_pair, int> _width;
         std::map<stream_index_pair, int> _height;

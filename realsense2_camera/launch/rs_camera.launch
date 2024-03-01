@@ -16,6 +16,8 @@
 
   <arg name="depth_width"         default="-1"/>
   <arg name="depth_height"        default="-1"/>
+  <arg name="depth_units"         default="0.0001"/>
+  <arg name="disparity_shift"     default="10"/>
   <arg name="enable_depth"        default="true"/>
 
   <arg name="confidence_width"    default="-1"/>
@@ -97,6 +99,8 @@
 
       <arg name="depth_width"              value="$(arg depth_width)"/>
       <arg name="depth_height"             value="$(arg depth_height)"/>
+      <arg name="depth_units"              value="$(arg depth_units)"/>
+      <arg name="disparity_shift"          value="$(arg disparity_shift)"/>
       <arg name="enable_depth"             value="$(arg enable_depth)"/>
 
       <arg name="confidence_width"         value="$(arg confidence_width)"/>
